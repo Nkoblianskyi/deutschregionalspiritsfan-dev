@@ -72,8 +72,9 @@ export function Footer() {
           <p className="font-mono text-xs text-muted-foreground">
             &copy; {new Date().getFullYear()} Deutsch Regional Spirits Fan. Alle Rechte vorbehalten.
           </p>
-          <p className="font-mono text-xs text-muted-foreground max-w-md text-right">
-            Nur fuer Erwachsene ab 18 Jahren. Bitte trinken Sie verantwortungsvoll.
+            <p className="font-mono text-xs text-muted-foreground max-w-md md:text-right leading-relaxed">
+            Nur fuer Erwachsene ab 18 Jahren. Bitte trinken Sie verantwortungsvoll. Kein Verkauf von Alkohol
+            durch diese Website.
           </p>
         </div>
       </div>

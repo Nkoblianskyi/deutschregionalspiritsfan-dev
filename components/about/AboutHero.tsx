@@ -21,8 +21,9 @@ export function AboutHero() {
           Unser Blog ueber deutsche Destillate
         </h1>
         <p className="font-mono text-sm text-muted-foreground max-w-2xl leading-relaxed mb-6">
-          Wir sind Liebhaber regionaler deutscher Spirituosen und teilen unser Wissen
-          uber Terroir, Tradition und Geschmack der deutschen Destillationskultur.
+          Wir sind Liebhaber regionaler deutscher Spirituosen und deutscher Bierkultur und teilen Wissen zu
+          Terroir, Tradition und Geschmack — ohne Markenwerbung bei Bier, ohne Verkauf oder Vermittlung von
+          Alkohol.
         </p>
         <AgeDisclaimer />
       </div>

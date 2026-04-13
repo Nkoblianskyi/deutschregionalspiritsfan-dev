@@ -1,24 +1,26 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { BeerCultureIntro } from '@/components/home/BeerCultureIntro'
 
-const breweries = [
+/** Generische Beispiele ohne Markennamen — nur Region, Stil und Spirituosen-Kontext. */
+const regionalHighlights = [
   {
-    name: 'Schwarzwaelder Obstbrennerei',
+    title: 'Obstbrand & Gaststuben',
     region: 'Baden-Wuerttemberg',
-    specialty: 'Kirschwasser und Obstbraende',
-    abv: 'bis 50 % Vol.',
+    detail: 'Kirschwasser und Obstbraende neben lokalen Biersorten in Wirtshaeusern',
+    note: 'Spirituosen bis 50 % Vol. · Bier deutlich darunter',
   },
   {
-    name: 'Bayerische Getreidebrenner',
+    title: 'Getreidebrand & Braukultur',
     region: 'Bayern',
-    specialty: 'Getreidebrand und Zwetschgenschnaps',
-    abv: 'bis 43 % Vol.',
+    detail: 'Weizen- und Hellesbier-Stile; dazu traditionelle Getreide- und Steinobstbraende',
+    note: 'typ. Bier 4,5–6 % Vol.',
   },
   {
-    name: 'Rheinlaendische Destillerie',
-    region: 'Rheinland',
-    specialty: 'Traubentrester und Birnenbrand',
-    abv: 'bis 42 % Vol.',
+    title: 'Rheinische Stuben',
+    region: 'Nordrhein-Westfalen',
+    detail: 'Altbier-Stil und koelschaehnliche obergaerige Biere; lokale Spirituosen im Ausschank',
+    note: 'Bier typ. unter 5,5 % Vol.',
   },
 ]
 
@@ -38,9 +40,10 @@ export function BreweryTeaser() {
           <div className="flex flex-col justify-end">
             <p className="font-mono text-sm text-muted-foreground leading-relaxed mb-6">
               Regionale Pubs und Brauereien sind das lebendige Herz der deutschen
-              Trinkkultur. Hier trifft Handwerk auf Gesellschaft, hier werden Biere
-              und lokale Spirituosen nach uralten Rezepturen hergestellt und serviert.
-              Kein Getraenk in diesen Stuben ubertrifft 50 % Vol. unseres Schnapses.
+              Trinkkultur. Hier trifft Handwerk auf Gesellschaft; klassische{' '}
+              <strong className="text-foreground font-semibold">Bierstile</strong> (ohne Schwerpunkt auf
+              Markenlogos) leben neben lokalen Spirituosen. Kein hier typisches Bier erreicht den Alkoholgehalt
+              hochprozentiger Braende; unsere Destillat-Themen bleiben bis 50 % Vol.
             </p>
             <Link
               href="/brauereien"
@@ -50,6 +53,8 @@ export function BreweryTeaser() {
             </Link>
           </div>
         </div>
+
+        <BeerCultureIntro />
 
         <div className="relative aspect-video overflow-hidden mb-12">
           <Image
@@ -62,25 +67,25 @@ export function BreweryTeaser() {
         </div>
 
         <div className="border-t border-border/40">
-          {breweries.map((brewery, index) => (
+          {regionalHighlights.map((row, index) => (
             <div
-              key={brewery.name}
+              key={row.title}
               className="grid grid-cols-1 md:grid-cols-4 gap-4 py-6 border-b border-border/40 hover:bg-secondary/20 transition-colors duration-200 px-4"
             >
               <div className="flex items-center gap-4">
                 <span className="font-serif text-3xl font-light text-border">
                   {String(index + 1).padStart(2, '0')}
                 </span>
-                <h3 className="font-serif text-lg font-semibold text-foreground">{brewery.name}</h3>
+                <h3 className="font-serif text-lg font-semibold text-foreground">{row.title}</h3>
               </div>
               <p className="font-mono text-xs text-muted-foreground uppercase tracking-widest flex items-center">
-                {brewery.region}
+                {row.region}
               </p>
-              <p className="font-mono text-xs text-muted-foreground flex items-center">
-                {brewery.specialty}
+              <p className="font-mono text-xs text-muted-foreground flex items-center leading-relaxed">
+                {row.detail}
               </p>
-              <p className="font-mono text-xs text-primary font-semibold flex items-center justify-end">
-                {brewery.abv}
+              <p className="font-mono text-xs text-primary font-semibold flex items-center justify-end text-right">
+                {row.note}
               </p>
             </div>
           ))}

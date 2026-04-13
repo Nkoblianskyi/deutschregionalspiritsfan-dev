@@ -95,6 +95,18 @@ export function BrauereiContent() {
           </div>
         </div>
 
+        <div className="border border-border/40 p-6 mb-16 flex items-start gap-4 bg-card">
+          <div className="w-1 self-stretch bg-border shrink-0" />
+          <div>
+            <p className="font-mono text-xs uppercase tracking-widest text-primary mb-1">Kein Alkoholverkauf</p>
+            <p className="font-mono text-xs text-muted-foreground leading-relaxed">
+              Wir fuehren <strong className="text-foreground font-semibold">keinen Verkauf, keinen Versand und keine
+              Vermittlung</strong> von Bier, Spirituosen oder anderen alkoholischen Getraenken. Namen von
+              Bierstilen und Regionen sind allgemein beschreibend gemeint, nicht als Werbung fuer einzelne Marken.
+            </p>
+          </div>
+        </div>
+
         <section className="mb-20">
           <p className="font-mono text-xs tracking-[0.3em] uppercase text-primary mb-4">Braustaetten und Pubs</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-4 text-balance">

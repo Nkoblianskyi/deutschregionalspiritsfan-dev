@@ -31,10 +31,17 @@ export function AboutContent() {
             </h2>
             <p className="font-mono text-sm text-muted-foreground leading-relaxed mb-4">
               Deutsch Regional Spirits Fan ist ein unabhaengiges Editorial-Blog, das sich der
-              Welt der regionalen deutschen Destillate widmet. Entstanden aus einer tiefen
-              Faszination fur das Handwerk der Brennerei und die geografische Vielfalt
-              Deutschlands, beleuchten wir, wie Terroir und Tradition den Charakter
-              eines Destillats formen.
+              Welt der regionalen deutschen Destillate und — ergaenzend — der{' '}
+              <strong className="text-foreground font-semibold">Bierkultur als Stil- und Regionalthema</strong>{' '}
+              widmet, stets <strong className="text-foreground font-semibold">ohne kommerzielle Marken oder Logos</strong>{' '}
+              bei Bier. Entstanden aus einer tiefen Faszination fuer Brennerei- und Brauhandwerk sowie die
+              geografische Vielfalt Deutschlands, beleuchten wir, wie Terroir und Tradition den Charakter von
+              Destillaten und typischen Bierstilen formen.
+            </p>
+            <p className="font-mono text-sm text-muted-foreground leading-relaxed mb-4">
+              <strong className="text-foreground font-semibold">Wir betreiben keinen Verkauf von Alkohol:</strong>{' '}
+              Es gibt weder Shop noch Bestellabwicklung; wir versenden und vermitteln keine alkoholischen
+              Getraenke. Der Blog dient ausschliesslich der Information und dem kulturellen Austausch.
             </p>
             <p className="font-mono text-sm text-muted-foreground leading-relaxed mb-4">
               Unser Fokus liegt auf Frucht- und Getreidedestillaten bis maximal 50 % Vol.

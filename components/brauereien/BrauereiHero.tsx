@@ -22,8 +22,9 @@ export function BrauereiHero() {
         </h1>
         <p className="font-mono text-sm text-muted-foreground max-w-2xl leading-relaxed mb-6">
           Regionale Pubs, Gasthaeuser und Brauereien sind die lebendige Buhne der deutschen
-          Trinkkultur. Hier werden Biere und lokale Spirituosen nach Tradition gebraut
-          und genossen.
+          Trinkkultur. Hier beschreiben wir <strong className="text-foreground font-semibold">Stile und
+          Traditionen</strong>, nicht einzelne Marken oder Logos. Diese Website{' '}
+          <strong className="text-foreground font-semibold">verkauft keinen Alkohol</strong>.
         </p>
         <AgeDisclaimer />
       </div>

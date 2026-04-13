@@ -10,7 +10,7 @@ const sections = [
   {
     title: '1. Verantwortlicher',
     content:
-      'Verantwortlicher fuer die Datenverarbeitung auf dieser Website ist Deutsch Regional Spirits Fan. Kontakt: info@deutschregionalspiritsfan.com. Diese Website wird unter der Domain deutschregionalspiritsfan.com betrieben.',
+      'Verantwortlicher fuer die Datenverarbeitung auf dieser Website ist Deutsch Regional Spirits Fan. Kontakt: info@deutschregionalspiritsfan.com. Diese Website wird unter der Domain deutschregionalspiritsfan.com betrieben. Es handelt sich um ein rein informatives Blogangebot; ein Verkauf, Versand oder eine Vermittlung von alkoholischen Getraenken findet nicht statt.',
   },
   {
     title: '2. Erhobene Daten',

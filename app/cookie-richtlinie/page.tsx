@@ -45,6 +45,11 @@ const sections = [
     content:
       'Wenn Sie Fragen zu unserer Cookie-Richtlinie haben, koennen Sie uns jederzeit unter info@deutschregionalspiritsfan.com kontaktieren.',
   },
+  {
+    title: 'Hinweis: kein Alkoholverkauf',
+    content:
+      'Diese Website ist ein Informationsblog. Wir verkaufen, versenden oder vermitteln keine alkoholischen Getraenke; die Cookie-Nutzung steht in keinem Zusammenhang mit einem Getraenkevertrieb.',
+  },
 ]
 
 export default function CookiePolicyPage() {

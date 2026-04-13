@@ -23,8 +23,10 @@ export function HomeHero() {
           <span className="block font-semibold text-primary">aus deutschen Landen</span>
         </h1>
         <p className="font-mono text-sm md:text-base text-foreground/70 max-w-2xl mx-auto leading-relaxed mb-8">
-          Wie das Terroir der deutschen Regionen den Geschmack von Frucht- und
-          Getreidebrennatem formt. Entdecken Sie die Vielfalt heimischer Destillate bis 50 % Vol.
+          Wie das Terroir der deutschen Regionen den Geschmack von Frucht- und Getreidebrennatem formt — und wie
+          klassische <strong className="text-foreground/90 font-semibold">Bierstile</strong> ohne Markenlogos zur
+          Kultur von Stuben und Brauhandwerk gehoeren. Heimische Destillate bis 50 % Vol., dazu reines
+          Lese- und Kulturwissen; kein Alkoholverkauf.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
